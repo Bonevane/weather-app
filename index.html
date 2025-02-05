@@ -1,1 +1,40 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Weather App</title><script defer="defer" src="main.js"></script></head><body><div id="background"></div><div class="container"><h1>Weather</h1><form id="weather-form"><input id="location" placeholder="Enter location" required/> <button type="submit">Search</button></form><div id="loading" class="hidden">Loading...</div><div id="weather-result"></div><div id="forecast"><div style="display:flex;align-items:center;gap:12px;padding-left:24px"><img src="9658067b25a6774dff53.svg" alt="" style="color:#fff"/> <span class="forecast-heading">10-day forecast</span></div><div id="forecast-container"></div></div></div></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  <script defer src="main.js"></script></head>
+  <body>
+    <div id="background"></div>
+
+    <div class="container">
+      <h1>Weather</h1>
+      <form id="weather-form">
+        <input
+          type="text"
+          id="location"
+          placeholder="Enter location"
+          required
+        />
+        <button type="submit">Search</button>
+      </form>
+      <div id="loading" class="hidden">Loading...</div>
+      <div id="weather-result"></div>
+      <div id="forecast">
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding-left: 24px;
+          "
+        >
+          <img src="9658067b25a6774dff53.svg" alt="" style="color: white" />
+          <span class="forecast-heading">10-day forecast</span>
+        </div>
+        <div id="forecast-container"></div>
+      </div>
+    </div>
+  </body>
+</html>
